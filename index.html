@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kam Chau — iOS Developer</title>
+  <meta name="description" content="Kam Chau — Independent iOS developer" />
+  <meta property="og:title" content="Kam Chau — iOS Developer" />
+  <meta property="og:description" content="Independent iOS developer. Building privacy-first, high-quality iPhone apps." />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">KC</div>
+      <div>
+        <h1>Kam Chau</h1>
+        <p class="lead">Independent iOS developer — building privacy-focused, well-designed iPhone apps.</p>
+        <div style="margin-top:10px" class="contact-row">
+          <span class="muted">Email:</span>
+          <a href="mailto:kamchaufreelancer@gmail.com">kamchaufreelancer@gmail.com</a>
+          <span class="muted">•</span>
+          <a href="#apps">Apps</a>
+          <span class="muted">•</span>
+          <a href="#privacy" id="open-privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="card" style="margin-top:20px">
+      <h2>About Me</h2>
+      <p class="muted">Hi — I’m Kam Chau. I develop iOS apps covering parental controls, productivity tools, and small utilities. I focus on clear UX, efficient performance, and user privacy. If you need help or want to report an issue, reach out via email.</p>
+    </section>
+
+    <section id="apps" class="card">
+      <h2>Apps</h2>
+      <p class="muted">Featured apps available on the App Store.</p>
+      <div class="grid" style="margin-top:14px">
+
+        <div class="app-card">
+          <div style="display:flex;gap:12px;align-items:center;width:100%">
+            <div class="app-art">TF</div>
+            <div style="flex:1">
+              <div class="app-title">Not Just Password Manager</div>
+              <div class="app-desc"></div>
+            </div>
+          </div>
+          <div style="margin-top:8px;width:100%;display:flex;gap:8px">
+            <a class="btn" href="#" aria-label="Not Just Password Manager on App Store">View on App Store</a>
+            <a class="" href="#" style="align-self:center;color:var(--muted);text-decoration:underline">Support</a>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div style="display:flex;gap:12px;align-items:center;width:100%">
+            <div class="app-art">GA</div>
+            <div style="flex:1">
+              <div class="app-title">Guardian Angel for Parents</div>
+              <div class="app-desc">Parental control & screen time manager with family safety features.</div>
+            </div>
+          </div>
+          <div style="margin-top:8px;width:100%;display:flex;gap:8px">
+            <a class="btn" href="#" aria-label="Guardian Angel on App Store">View on App Store</a>
+            <a class="" href="#" style="align-self:center;color:var(--muted);text-decoration:underline">Support</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p class="muted">For enquiries, business, or support:</p>
+      <p><a href="mailto:kamchaufreelancer@gmail.com">kamchaufreelancer@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <div class="muted">&copy; 2025 Kam Chau. All rights reserved.</div>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">This site is a developer profile intended for Apple Developer Program verification.</div>
+    </footer>
+  </main>
+
+  <!-- Privacy modal -->
+  <div id="privacy-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <h3>Privacy Policy</h3>
+      <p>Last updated: 9 August 2025</p>
+      <p>Kam Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.</p>
+      <h4>Information Collected</h4>
+      <p>I do not collect personally identifiable information through this website. App-specific data collection is described on each app's App Store product page and within the app's privacy disclosures.</p>
+      <h4>Use of Data</h4>
+      <p>Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.</p>
+      <h4>Contact</h4>
+      <p>For privacy queries: <a href="mailto:kamchaufreelancer@gmail.com">kamchaufreelancer@gmail.com</a></p>
+      <p style="margin-top:8px"><button id="close-privacy" style="background:#111827;color:white;border:0;padding:8px 12px;border-radius:8px">Close</button></p>
+    </div>
+  </div>
+
+  <script>
+    const open = document.getElementById('open-privacy');
+    const modal = document.getElementById('privacy-modal');
+    const close = document.getElementById('close-privacy');
+    open && open.addEventListener('click', (e) => { e.preventDefault(); modal.style.display = 'flex'; modal.setAttribute('aria-hidden', 'false'); });
+    close && close.addEventListener('click', () => { modal.style.display = 'none'; modal.setAttribute('aria-hidden', 'true'); });
+    modal && modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display='none'; modal.setAttribute('aria-hidden','true'); } });
+  </script>
+</body>
+</html>

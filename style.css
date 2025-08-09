@@ -1,0 +1,139 @@
+:root {
+  --bg: #f7f9fc;
+  --card: #fff;
+  --muted: #6b7280;
+  --accent: #0b84ff;
+  --radius: 12px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.5;
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+}
+.wrap {
+  max-width: 980px;
+  margin: 36px auto;
+  padding: 24px;
+}
+header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0b84ff, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+p.lead {
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(12, 18, 31, 0.06);
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(249, 250, 251, 0.9));
+}
+.app-art {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #3730a3;
+}
+.app-title {
+  font-weight: 600;
+}
+.app-desc {
+  color: var(--muted);
+  font-size: 14px;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer {
+  margin-top: 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+.contact-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.muted {
+  color: var(--muted);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal {
+  max-width: 760px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 18px 40px rgba(12, 18, 31, 0.4);
+}
+.modal h3 {
+  margin-top: 0;
+}
+@media (max-width: 640px) {
+  .wrap {
+    padding: 16px;
+  }
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
