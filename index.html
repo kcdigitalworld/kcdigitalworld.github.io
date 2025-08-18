@@ -23,7 +23,7 @@
           <span class="muted">•</span>
           <a href="#apps">Apps</a>
           <span class="muted">•</span>
-          <a href="#privacy" id="open-privacy">Privacy Policy</a>
+          <a href="#privacy">Privacy Policy</a>
         </div>
       </div>
     </header>
@@ -73,35 +73,26 @@
       <p><a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
     </section>
 
+    <section id="privacy" class="card">
+      <h2>Privacy Policy</h2>
+      <p>Last updated: 9 August 2025</p>
+      <p>Kam Kau Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.</p>
+      
+      <h3>Information Collected</h3>
+      <p>I do not collect personally identifiable information through this website. App-specific data collection is described on each app's App Store product page and within the app's privacy disclosures.</p>
+      
+      <h3>Use of Data</h3>
+      <p>Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.</p>
+      
+      <h3>Contact</h3>
+      <p>For privacy queries: <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
+    </section>
+
     <footer>
       <div class="muted">&copy; 2025 Kam Kau Chau. All rights reserved.</div>
       <div style="margin-top:6px;color:var(--muted);font-size:13px">This site is a developer profile intended for Apple Developer Program verification.</div>
     </footer>
   </main>
 
-  <!-- Privacy modal -->
-  <div id="privacy-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal" role="document">
-      <h3>Privacy Policy</h3>
-      <p>Last updated: 9 August 2025</p>
-      <p>Kam Kam Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.</p>
-      <h4>Information Collected</h4>
-      <p>I do not collect personally identifiable information through this website. App-specific data collection is described on each app's App Store product page and within the app's privacy disclosures.</p>
-      <h4>Use of Data</h4>
-      <p>Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.</p>
-      <h4>Contact</h4>
-      <p>For privacy queries: <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
-      <p style="margin-top:8px"><button id="close-privacy" style="background:#111827;color:white;border:0;padding:8px 12px;border-radius:8px">Close</button></p>
-    </div>
-  </div>
-
-  <script>
-    const open = document.getElementById('open-privacy');
-    const modal = document.getElementById('privacy-modal');
-    const close = document.getElementById('close-privacy');
-    open && open.addEventListener('click', (e) => { e.preventDefault(); modal.style.display = 'flex'; modal.setAttribute('aria-hidden', 'false'); });
-    close && close.addEventListener('click', () => { modal.style.display = 'none'; modal.setAttribute('aria-hidden', 'true'); });
-    modal && modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display='none'; modal.setAttribute('aria-hidden','true'); } });
-  </script>
 </body>
 </html>
