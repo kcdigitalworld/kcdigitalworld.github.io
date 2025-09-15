@@ -2,7 +2,7 @@
 
 This repository hosts the source code for my personal developer profile website, built to showcase my iOS apps and provide contact information.
 
-The website is published via [GitHub Pages](https://pages.github.com/) at [https://kcfreefly.github.io](https://kcfreefly.github.io).
+The website is published via [GitHub Pages](https://pages.github.com/) at [https://kcdigitalworld.github.io](https://kcdigitalworld.github.io).
 
 
 ## About
