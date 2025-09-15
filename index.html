@@ -14,40 +14,48 @@
   <main class="wrap">
     <header>
       <div class="logo">KC</div>
-      <div>
-        <h1>Kam Chau</h1>
-        <p class="lead">Independent iOS developer — building privacy-focused, well-designed iPhone apps.</p>
+      <div style="flex: 1;">
+        <h1 data-i18n="name">Kam Chau</h1>
+        <p class="lead" data-i18n="tagline">Independent iOS developer — building privacy-focused, well-designed iPhone apps.</p>
         <div style="margin-top:10px" class="contact-row">
-          <span class="muted">Email:</span>
+          <span class="muted" data-i18n="email-label">Email:</span>
           <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a>
           <span class="muted">•</span>
-          <a href="#apps">Apps</a>
+          <a href="#apps" data-i18n="nav-apps">Apps</a>
           <span class="muted">•</span>
-          <a href="#privacy">Privacy Policy</a>
+          <a href="#privacy" data-i18n="nav-privacy">Privacy Policy</a>
         </div>
+      </div>
+      <div class="language-selector">
+        <select id="language-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="ja">日本語</option>
+        </select>
       </div>
     </header>
 
     <section class="card" style="margin-top:20px">
-      <h2>About Me</h2>
-      <p class="muted">Hi — I’m Kam Chau. I develop iOS apps covering parental controls, productivity tools, and small utilities. I focus on clear UX, efficient performance, and user privacy. If you need help or want to report an issue, reach out via email.</p>
+      <h2 data-i18n="about-title">About Me</h2>
+      <p class="muted" data-i18n="about-description">Hi — I'm Kam Chau. I develop iOS apps covering parental controls, productivity tools, and small utilities. I focus on clear UX, efficient performance, and user privacy. If you need help or want to report an issue, reach out via email.</p>
     </section>
 
     <section id="apps" class="card">
-      <h2>Apps</h2>
-      <p class="muted">Featured apps available on the App Store.</p>
+      <h2 data-i18n="apps-title">Apps</h2>
+      <p class="muted" data-i18n="apps-subtitle">Featured apps available on the App Store.</p>
       <div class="grid" style="margin-top:14px">
 
         <div class="app-card">
           <div style="display:flex;gap:12px;align-items:center;width:100%">
             <img src="secure-vault-plus-icon.png" alt="Secure Vault Plus" class="app-art" style="object-fit: cover;">
             <div style="flex:1">
-              <div class="app-title">SecureVault Pro 2025</div>
-              <div class="app-desc">Keep Your Secrets Safe</div>
+              <div class="app-title" data-i18n="app1-title">SecureVault Pro 2025</div>
+              <div class="app-desc" data-i18n="app1-desc">Keep Your Secrets Safe</div>
             </div>
           </div>
           <div style="margin-top:8px;width:100%;display:flex;gap:8px">
-            <a class="btn" href="#" aria-label="SecureVault Pro 2025 on App Store">View on App Store</a>
+            <a class="btn" href="#" aria-label="SecureVault Pro 2025 on App Store" data-i18n="view-app-store">View on App Store</a>
           </div>
         </div>
 
@@ -55,12 +63,12 @@
           <div style="display:flex;gap:12px;align-items:center;width:100%">
             <div class="app-art">BC</div>
             <div style="flex:1">
-              <div class="app-title">Birthday Calender (Avaialble Soon)</div>
-              <div class="app-desc">Never forget your friends' brithdays and anniversaries</div>
+              <div class="app-title" data-i18n="app2-title">Birthday Calender (Available Soon)</div>
+              <div class="app-desc" data-i18n="app2-desc">Never forget your friends' birthdays and anniversaries</div>
             </div>
           </div>
           <div style="margin-top:8px;width:100%;display:flex;gap:8px">
-            <a class="btn" href="#" aria-label="Guardian Angel on App Store">View on App Store</a>
+            <a class="btn" href="#" aria-label="Birthday Calendar on App Store" data-i18n="view-app-store">View on App Store</a>
           </div>
         </div>
 
@@ -69,12 +77,12 @@
           <div style="display:flex;gap:12px;align-items:center;width:100%">
             <div class="app-art">GA</div>
             <div style="flex:1">
-              <div class="app-title">Guardian Angel for Parents (Avaialble Soon)</div>
-              <div class="app-desc">Parental control & screen time manager with family safety features</div>
+              <div class="app-title" data-i18n="app3-title">Guardian Angel for Parents (Available Soon)</div>
+              <div class="app-desc" data-i18n="app3-desc">Parental control & screen time manager with family safety features</div>
             </div>
           </div>
           <div style="margin-top:8px;width:100%;display:flex;gap:8px">
-            <a class="btn" href="#" aria-label="Guardian Angel on App Store">View on App Store</a>
+            <a class="btn" href="#" aria-label="Guardian Angel on App Store" data-i18n="view-app-store">View on App Store</a>
           </div>
         </div>
 
@@ -82,12 +90,12 @@
           <div style="display:flex;gap:12px;align-items:center;width:100%">
             <div class="app-art">GA</div>
             <div style="flex:1">
-              <div class="app-title">Guardian Angel for Kids (Avaialble Soon)</div>
-              <div class="app-desc">Parental control & screen time app for kids</div>
+              <div class="app-title" data-i18n="app4-title">Guardian Angel for Kids (Available Soon)</div>
+              <div class="app-desc" data-i18n="app4-desc">Parental control & screen time app for kids</div>
             </div>
           </div>
           <div style="margin-top:8px;width:100%;display:flex;gap:8px">
-            <a class="btn" href="#" aria-label="Guardian Angel on App Store">View on App Store</a>
+            <a class="btn" href="#" aria-label="Guardian Angel on App Store" data-i18n="view-app-store">View on App Store</a>
           </div>
         </div>
 
@@ -95,31 +103,199 @@
     </section>
 
     <section class="card">
-      <h2>Contact</h2>
-      <p class="muted">For enquiries, business, or support:</p>
+      <h2 data-i18n="contact-title">Contact</h2>
+      <p class="muted" data-i18n="contact-subtitle">For enquiries, business, or support:</p>
       <p><a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
     </section>
 
     <section id="privacy" class="card">
-      <h2>Privacy Policy</h2>
-      <p>Last updated: 19 August 2025</p>
-      <p>Kam Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.</p>
-      
-      <h3>Information Collected</h3>
-      <p>I do not collect personally identifiable information through this website. App-specific data collection is described on each app's App Store product page and within the app's privacy disclosures.</p>
-      
-      <h3>Use of Data</h3>
-      <p>Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.</p>
-      
-      <h3>Contact</h3>
-      <p>For privacy queries: <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
+      <h2 data-i18n="privacy-title">Privacy Policy</h2>
+      <p data-i18n="privacy-updated">Last updated: 19 August 2025</p>
+      <p data-i18n="privacy-intro">Kam Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.</p>
+
+      <h3 data-i18n="privacy-info-title">Information Collected</h3>
+      <p data-i18n="privacy-info-desc">I do not collect personally identifiable information through this website. App-specific data collection is described on each app's App Store product page and within the app's privacy disclosures.</p>
+
+      <h3 data-i18n="privacy-use-title">Use of Data</h3>
+      <p data-i18n="privacy-use-desc">Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.</p>
+
+      <h3 data-i18n="privacy-contact-title">Contact</h3>
+      <p data-i18n="privacy-contact-desc">For privacy queries: <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a></p>
     </section>
 
     <footer>
-      <div class="muted">&copy; 2025 Kam Kau Chau. All rights reserved.</div>
-      <div style="margin-top:6px;color:var(--muted);font-size:13px">This site is a developer profile intended for Apple Developer Program verification.</div>
+      <div class="muted" data-i18n="footer-copyright">&copy; 2025 Kam Kau Chau. All rights reserved.</div>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px" data-i18n="footer-note">This site is a developer profile intended for Apple Developer Program verification.</div>
     </footer>
   </main>
+
+  <script>
+    const translations = {
+      'en': {
+        'name': 'Kam Chau',
+        'tagline': 'Independent iOS developer — building privacy-focused, well-designed iPhone apps.',
+        'email-label': 'Email:',
+        'nav-apps': 'Apps',
+        'nav-privacy': 'Privacy Policy',
+        'about-title': 'About Me',
+        'about-description': 'Hi — I\'m Kam Chau. I develop iOS apps covering parental controls, productivity tools, and small utilities. I focus on clear UX, efficient performance, and user privacy. If you need help or want to report an issue, reach out via email.',
+        'apps-title': 'Apps',
+        'apps-subtitle': 'Featured apps available on the App Store.',
+        'app1-title': 'SecureVault Pro 2025',
+        'app1-desc': 'Keep Your Secrets Safe',
+        'app2-title': 'Birthday Calendar (Available Soon)',
+        'app2-desc': 'Never forget your friends\' birthdays and anniversaries',
+        'app3-title': 'Guardian Angel for Parents (Available Soon)',
+        'app3-desc': 'Parental control & screen time manager with family safety features',
+        'app4-title': 'Guardian Angel for Kids (Available Soon)',
+        'app4-desc': 'Parental control & screen time app for kids',
+        'view-app-store': 'View on App Store',
+        'contact-title': 'Contact',
+        'contact-subtitle': 'For enquiries, business, or support:',
+        'privacy-title': 'Privacy Policy',
+        'privacy-updated': 'Last updated: 19 August 2025',
+        'privacy-intro': 'Kam Chau ("I", "me") builds and distributes iOS apps. This privacy policy describes how I handle personal data in relation to my apps and website.',
+        'privacy-info-title': 'Information Collected',
+        'privacy-info-desc': 'I do not collect personally identifiable information through this website. App-specific data collection is described on each app\'s App Store product page and within the app\'s privacy disclosures.',
+        'privacy-use-title': 'Use of Data',
+        'privacy-use-desc': 'Data collected by apps is used to provide app functionality and improve user experience. Where analytics or crash reporting is used, only non-identifying analytics are collected unless explicitly stated.',
+        'privacy-contact-title': 'Contact',
+        'privacy-contact-desc': 'For privacy queries: <a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a>',
+        'footer-copyright': '© 2025 Kam Kau Chau. All rights reserved.',
+        'footer-note': 'This site is a developer profile intended for Apple Developer Program verification.'
+      },
+      'zh-TW': {
+        'name': 'Kam Chau',
+        'tagline': '獨立 iOS 開發者 — 專注於隱私保護的高質量 iPhone 應用程式。',
+        'email-label': '電子郵件：',
+        'nav-apps': '應用程式',
+        'nav-privacy': '隱私政策',
+        'about-title': '關於我',
+        'about-description': '你好 — 我是獨立iOS開發者。我開發涵蓋家長控制、生產力工具和小型實用程式的 iOS 應用程式。我專注於清晰的用戶體驗、高效的性能和用戶隱私。如果您需要幫助或想要回報問題，請透過電子郵件聯繫。',
+        'apps-title': '應用程式',
+        'apps-subtitle': '在 App Store 上提供的精選應用程式。',
+        'app1-title': '密管我 2025',
+        'app1-desc': '保護您的秘密安全',
+        'app2-title': '生日日曆（即將推出）',
+        'app2-desc': '永遠不會忘記朋友的生日和紀念日',
+        'app3-title': '家長守護天使（即將推出）',
+        'app3-desc': '具有家庭安全功能的家長控制和螢幕時間管理器',
+        'app4-title': '兒童守護天使（即將推出）',
+        'app4-desc': '兒童家長控制和螢幕時間應用程式',
+        'view-app-store': '在 App Store 查看',
+        'contact-title': '聯繫方式',
+        'contact-subtitle': '如有查詢、業務或支援：',
+        'privacy-title': '隱私政策',
+        'privacy-updated': '最後更新：2025年8月19日',
+        'privacy-intro': 'Kam Chau（"我"）開發並發佈 iOS 應用程式。本隱私政策描述了我如何處理與我的應用程式和網站相關的個人資料。',
+        'privacy-info-title': '收集的資訊',
+        'privacy-info-desc': '我不會透過本網站收集個人身份資訊。應用程式特定的資料收集在每個應用程式的 App Store 產品頁面和應用程式的隱私聲明中描述。',
+        'privacy-use-title': '資料使用',
+        'privacy-use-desc': '應用程式收集的資料用於提供應用程式功能和改善用戶體驗。使用分析或當機報告時，除非明確說明，否則只收集非識別性分析。',
+        'privacy-contact-title': '聯繫方式',
+        'privacy-contact-desc': '隱私查詢請聯繫：<a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a>',
+        'footer-copyright': '© 2025 Kam Kau Chau。保留所有權利。',
+        'footer-note': '本網站是用於 Apple 開發者計劃驗證的開發者資料。'
+      },
+      'zh-CN': {
+        'name': 'Kam Chau',
+        'tagline': '独立 iOS 开发者 — 专注于隐私保护的高质量 iPhone 应用程序。',
+        'email-label': '电子邮件：',
+        'nav-apps': '应用程序',
+        'nav-privacy': '隐私政策',
+        'about-title': '关于我',
+        'about-description': '你好 — 我是独立iOS开发者。我开发涵盖家长控制、生产力工具和小型实用程序的 iOS 应用程序。我专注于清晰的用户体验、高效的性能和用户隐私。如果您需要帮助或想要报告问题，请通过电子邮件联系。',
+        'apps-title': '应用程序',
+        'apps-subtitle': '在 App Store 上提供的精选应用程序。',
+        'app1-title': '密管我 2025',
+        'app1-desc': '保护您的秘密安全',
+        'app2-title': '生日日历（即将推出）',
+        'app2-desc': '永远不会忘记朋友的生日和纪念日',
+        'app3-title': '家长守护天使（即将推出）',
+        'app3-desc': '具有家庭安全功能的家长控制和屏幕时间管理器',
+        'app4-title': '儿童守护天使（即将推出）',
+        'app4-desc': '儿童家长控制和屏幕时间应用程序',
+        'view-app-store': '在 App Store 查看',
+        'contact-title': '联系方式',
+        'contact-subtitle': '如有咨询、业务或支持：',
+        'privacy-title': '隐私政策',
+        'privacy-updated': '最后更新：2025年8月19日',
+        'privacy-intro': 'Kam Chau（"我"）开发并发布 iOS 应用程序。本隐私政策描述了我如何处理与我的应用程序和网站相关的个人数据。',
+        'privacy-info-title': '收集的信息',
+        'privacy-info-desc': '我不会通过本网站收集个人身份信息。应用程序特定的数据收集在每个应用程序的 App Store 产品页面和应用程序的隐私声明中描述。',
+        'privacy-use-title': '数据使用',
+        'privacy-use-desc': '应用程序收集的数据用于提供应用程序功能和改善用户体验。使用分析或崩溃报告时，除非明确说明，否则只收集非识别性分析。',
+        'privacy-contact-title': '联系方式',
+        'privacy-contact-desc': '隐私咨询请联系：<a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a>',
+        'footer-copyright': '© 2025 Kam Kau Chau。保留所有权利。',
+        'footer-note': '本网站是用于 Apple 开发者计划验证的开发者资料。'
+      },
+      'ja': {
+        'name': 'Kam Chau',
+        'tagline': '独立 iOS 開発者 — プライバシーを重視した高品質な iPhone アプリを構築。',
+        'email-label': 'メール：',
+        'nav-apps': 'アプリ',
+        'nav-privacy': 'プライバシーポリシー',
+        'about-title': '私について',
+        'about-description': 'こんにちは — 私は Kam Chau です。ペアレンタルコントロール、生産性ツール、小さなユーティリティをカバーする iOS アプリを開発しています。明確な UX、効率的なパフォーマンス、ユーザーのプライバシーに焦点を当てています。ヘルプが必要な場合や問題を報告したい場合は、メールでお問い合わせください。',
+        'apps-title': 'アプリ',
+        'apps-subtitle': 'App Store で利用可能な注目のアプリ。',
+        'app1-title': 'パス守 2025',
+        'app1-desc': 'あなたの秘密を安全に保つ',
+        'app2-title': '誕生日カレンダー（近日公開）',
+        'app2-desc': '友達の誕生日や記念日を忘れることはありません',
+        'app3-title': '保護者のガーディアンエンジェル（近日公開）',
+        'app3-desc': '家族の安全機能を備えたペアレンタルコントロールとスクリーンタイム管理',
+        'app4-title': '子供のガーディアンエンジェル（近日公開）',
+        'app4-desc': '子供向けペアレンタルコントロールとスクリーンタイムアプリ',
+        'view-app-store': 'App Store で表示',
+        'contact-title': 'お問い合わせ',
+        'contact-subtitle': 'お問い合わせ、ビジネス、またはサポートについて：',
+        'privacy-title': 'プライバシーポリシー',
+        'privacy-updated': '最終更新：2025年8月19日',
+        'privacy-intro': 'Kam Chau（「私」）は iOS アプリを構築し配布しています。このプライバシーポリシーは、私のアプリとウェブサイトに関連して個人データをどのように扱うかを説明しています。',
+        'privacy-info-title': '収集される情報',
+        'privacy-info-desc': 'このウェブサイトを通じて個人を特定できる情報は収集しません。アプリ固有のデータ収集は、各アプリの App Store 製品ページとアプリのプライバシー開示で説明されています。',
+        'privacy-use-title': 'データの使用',
+        'privacy-use-desc': 'アプリで収集されたデータは、アプリ機能の提供とユーザー体験の向上に使用されます。分析やクラッシュレポートが使用される場合、明示的に記載されていない限り、識別不可能な分析のみが収集されます。',
+        'privacy-contact-title': 'お問い合わせ',
+        'privacy-contact-desc': 'プライバシーに関するお問い合わせ：<a href="mailto:kamchaufreelancer+support@gmail.com">kamchaufreelancer+support@gmail.com</a>',
+        'footer-copyright': '© 2025 Kam Kau Chau. 全著作権所有。',
+        'footer-note': 'このサイトは Apple Developer Program の検証を目的とした開発者プロファイルです。'
+      }
+    };
+
+    function changeLanguage(lang) {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+
+      // Update document language
+      document.documentElement.lang = lang;
+
+      // Save language preference
+      localStorage.setItem('selectedLanguage', lang);
+    }
+
+    // Initialize language selector
+    document.addEventListener('DOMContentLoaded', function() {
+      const languageSelect = document.getElementById('language-select');
+
+      // Load saved language preference
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+      languageSelect.value = savedLanguage;
+      changeLanguage(savedLanguage);
+
+      // Add event listener for language changes
+      languageSelect.addEventListener('change', function() {
+        changeLanguage(this.value);
+      });
+    });
+  </script>
 
 </body>
 </html>
